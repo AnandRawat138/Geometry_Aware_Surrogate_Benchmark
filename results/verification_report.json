@@ -1,0 +1,22 @@
+{
+  "random_forest": {
+    "rmse_diff": -1.1999999999998652,
+    "r2_diff": 0.050000000000000044,
+    "wc_error_diff": -1.79999999999973
+  },
+  "gaussian_process": {
+    "rmse_diff": -1.3999966537916366,
+    "r2_diff": 0.06999999995017292,
+    "wc_error_diff": -1.5999957549560535
+  },
+  "neural_network": {
+    "rmse_diff": -1.1256427852712731,
+    "r2_diff": -0.91131306687661,
+    "wc_error_diff": -1.3561677027097887
+  },
+  "ablation_no_geometry": {
+    "rmse_diff": -2.2999999999998653,
+    "r2_diff": 0.0,
+    "wc_error_diff": -3.39999999999973
+  }
+}

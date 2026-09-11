@@ -1,0 +1,41 @@
+{
+  "source": "PAPER_REPORTED",
+  "note": "These values are manually extracted from the original manuscript. The reconstructed repository will not match these exactly, but they serve as historical reference targets.",
+  "metrics": {
+    "random_forest": {
+      "rmse_db": 1.2,
+      "r2_test": 0.95,
+      "worst_case_error_db": 1.8
+    },
+    "gaussian_process": {
+      "rmse_db": 1.4,
+      "r2_test": 0.93,
+      "worst_case_error_db": 1.6
+    },
+    "neural_network": {
+      "rmse_db": 1.6,
+      "r2_test": 0.91,
+      "worst_case_error_db": 2.1
+    },
+    "ablation_no_geometry": {
+      "rmse_db": 2.3,
+      "worst_case_error_db": 3.4
+    }
+  },
+  "designs": {
+    "baseline": {
+      "length_m": 14.20,
+      "width_m": 9.73,
+      "curvature_descriptor": 0.58,
+      "coating_thickness_m": 0.01,
+      "loss_tangent": 0.10
+    },
+    "optimized": {
+      "length_m": 12.27,
+      "width_m": 7.00,
+      "curvature_descriptor": 0.75,
+      "coating_thickness_m": 0.041,
+      "loss_tangent": 0.36
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-09-11T15:57:34.252307",
+  "seed": 42,
+  "n_samples": 3620,
+  "results": {
+    "random_forest": {
+      "rmse": 1.3475288593379208e-13,
+      "r2": 1.0,
+      "worst_case_abs_error": 2.7000623958883807e-13
+    },
+    "gaussian_process": {
+      "rmse": 3.3462083633805285e-06,
+      "r2": 0.999999999950173,
+      "worst_case_abs_error": 4.2450439465824275e-06
+    },
+    "neural_network": {
+      "rmse": 0.4743572147287269,
+      "r2": -0.0013130668766099252,
+      "worst_case_abs_error": 0.7438322972902114
+    },
+    "ablation_no_geometry": {
+      "rmse": 1.3466773156929994e-13,
+      "r2": 1.0,
+      "worst_case_abs_error": 2.7000623958883807e-13
+    }
+  }
+}

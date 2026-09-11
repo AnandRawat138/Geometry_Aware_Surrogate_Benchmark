@@ -1,0 +1,34 @@
+# Reconstructed Benchmark Constants
+# Note: The original paper did not publish the exact numerical values for these constants.
+# These values are synthetically chosen to produce stable, well-behaved benchmark responses.
+
+benchmark:
+  noise_sigma: 0.1  # Reconstructed noise level
+  frequency_ghz_default: 10.0
+  angular_resolution_deg: 1.0
+  hfss_angular_resolution_deg: 10.0
+
+  # Constants for R(z) = sum(wi*gi) + alpha*sin(k*theta) + beta*cos(2*k*theta) + gamma*f + delta*exp(-lambda*C)
+  alpha: 2.0
+  beta: 1.5
+  gamma: 0.5
+  delta: -3.0
+  lambda_param: 2.0
+  k_param: 0.017453292519943295  # pi / 180 (Convert deg to rad implicitly)
+
+  # Weights for geometry descriptors (wi)
+  # Assumes features are normalized.
+  weights:
+    length: 1.2
+    width: 0.8
+    shape_factor: 0.5
+    surface_normal_var: -0.3
+    aspect_ratio: 0.6
+    curvature_agg: 0.0 # Delta handles curvature in exp term
+
+genetic_algorithm:
+  population_size: 50
+  generations: 100
+  crossover_probability: 0.80
+  mutation_probability: 0.10
+  random_seed: 42

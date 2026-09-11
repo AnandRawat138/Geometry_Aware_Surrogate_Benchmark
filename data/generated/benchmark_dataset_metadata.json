@@ -1,0 +1,10 @@
+{
+  "dataset_type": "reconstructed_benchmark",
+  "seed": 42,
+  "frequency_ghz": 10,
+  "angular_resolution_deg": 1,
+  "source": "paper-derived reconstruction",
+  "historical_original_data": false,
+  "timestamp": "2026-09-11T15:57:17.193326",
+  "num_samples": 3620
+}
